@@ -1,0 +1,9 @@
+git clone --branch 7.13 git@github.com:elastic/kibana.git && cd kibana
+
+nvm use
+
+yarn kbn bootstrap
+
+node scripts/generate_plugin.js 
+
+yarn start --oss
